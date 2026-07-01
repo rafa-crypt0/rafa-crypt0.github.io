@@ -44,7 +44,7 @@
       <h2>Memorando</h2>
     </div>
     <p class="lede">
-      Enquanto lança notas fiscais durante o dia, escreve linhas de código à noite. Curso
+      Enquanto lanço notas fiscais durante o dia, escrevo linhas de código à noite. Curso
       <strong>Ciências Contábeis</strong> e <strong>Ciência da Computação</strong> em paralelo, e faço um
       estágio de 30h semanais na Andrade Contabilidade, em Aiuaba (CE), sob supervisão de um contador
       licenciado. O plano é pragmático: entrar no mercado por TI ou administrativo primeiro, e usar isso
@@ -155,40 +155,100 @@
       <article class="entry" data-entry>
         <div class="entry-num"><span class="n">004</span><span class="check" aria-hidden="true">✓</span></div>
         <div class="entry-body">
-          <h3>IPTV Lab</h3>
+          <h3>Analisador de Documentos para Fraude</h3>
           <p>
-            Laboratório educacional de streaming com FFmpeg, Nginx RTMP e Docker, criado para estudar
-            protocolos de transmissão e os pontos de segurança envolvidos nesse tipo de infraestrutura.
+            Pipeline offline para análise automatizada de documentos em PDF ou imagem: extração de
+            texto com OCR, validação de CPF/CNPJ, detecção de padrões suspeitos (datas futuras,
+            valores editados) e um score probabilístico de risco. O relatório final mascara os dados
+            sensíveis antes de sair. Projeto demonstrativo, roda em Colab.
           </p>
           <div class="tags">
-            <span>Docker</span><span>FFmpeg</span><span>Nginx</span><span>Streaming</span>
+            <span>Python</span><span>OCR</span><span>Antifraude</span><span>Google Colab</span>
           </div>
         </div>
         <div class="entry-links">
-          <a href="https://github.com/rafa-crypt0?tab=repositories&q=iptv" target="_blank" rel="noopener">repositório ↗</a>
+          <a href="https://github.com/rafa-crypt0/fraud-doc-analyzer" target="_blank" rel="noopener">repositório ↗</a>
         </div>
       </article>
 
       <article class="entry" data-entry>
         <div class="entry-num"><span class="n">005</span><span class="check" aria-hidden="true">✓</span></div>
         <div class="entry-body">
-          <h3>Segurança Ofensiva — Uso Didático</h3>
+          <h3>Detecção de Fraude em Cartão de Crédito</h3>
           <p>
-            Simulações de ransomware e keylogger em Python, feitas em repositórios de bootcamp, com
-            README explicando o funcionamento e referência à Lei nº 12.737/2012. Uso estritamente
-            educacional, para entender como esses ataques funcionam por dentro.
+            Comparação de modelos de classificação (Regressão Logística, Random Forest, XGBoost)
+            para identificar transações fraudulentas num conjunto de quase 285 mil transações, das
+            quais só 0,17% são fraude. Tratamento de desbalanceamento com SMOTE, ajuste de
+            hiperparâmetros com GridSearchCV e explicabilidade via SHAP. O XGBoost venceu, com
+            precisão de 0,93 e F1-score de 0,85.
           </p>
           <div class="tags">
-            <span>Python</span><span>Segurança</span><span>Lei 12.737/2012</span>
+            <span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>SHAP</span><span>SMOTE</span>
           </div>
         </div>
         <div class="entry-links">
-          <a href="https://github.com/rafa-crypt0?tab=repositories" target="_blank" rel="noopener">repositório ↗</a>
+          <a href="https://github.com/rafa-crypt0/credit-card-fraud-detection" target="_blank" rel="noopener">repositório ↗</a>
         </div>
       </article>
 
       <article class="entry" data-entry>
         <div class="entry-num"><span class="n">006</span><span class="check" aria-hidden="true">✓</span></div>
+        <div class="entry-body">
+          <h3>Simulador de Investimentos</h3>
+          <p>
+            Ferramentas de simulação de investimentos em Excel, aplicando cálculos financeiros como
+            rendimento mensal, juros compostos e projeção de dividendos — modelagem estruturada,
+            documentada para ser reaproveitada.
+          </p>
+          <div class="tags">
+            <span>Excel</span><span>Modelagem Financeira</span><span>Juros Compostos</span>
+          </div>
+        </div>
+        <div class="entry-links">
+          <a href="https://github.com/rafa-crypt0/simulador_Investimentos" target="_blank" rel="noopener">repositório ↗</a>
+        </div>
+      </article>
+
+      <article class="entry" data-entry>
+        <div class="entry-num"><span class="n">007</span><span class="check" aria-hidden="true">✓</span></div>
+        <div class="entry-body">
+          <h3>Sistema Bancário (POO)</h3>
+          <p>
+            Sistema bancário em Python aplicando Programação Orientada a Objetos: cadastro de
+            usuários com validação, contas correntes, depósitos, saques com limite diário e
+            histórico de transações, seguindo PEP 8.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>POO</span><span>PEP 8</span>
+          </div>
+        </div>
+        <div class="entry-links">
+          <a href="https://github.com/rafa-crypt0/Sistema_Bancario_Poo" target="_blank" rel="noopener">repositório ↗</a>
+        </div>
+      </article>
+
+      <article class="entry" data-entry>
+        <div class="entry-num"><span class="n">008</span><span class="check" aria-hidden="true">✓</span></div>
+        <div class="entry-body">
+          <h3>Tradutor Técnico com Azure AI</h3>
+          <p>
+            Tradução de artigos técnicos preservando terminologia e contexto de domínio. Desenhado
+            para o Azure AI Translator, mas implementado de forma híbrida com Google Colab e API
+            pública para fins acadêmicos: upload de .docx, leitura via python-docx, tradução via
+            API e geração do documento traduzido. Integração completa com Azure e glossário técnico
+            próprio ficam para os próximos passos.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>Google Colab</span><span>python-docx</span><span>Azure AI (planejado)</span>
+          </div>
+        </div>
+        <div class="entry-links">
+          <a href="https://github.com/rafa-crypt0/tradutor-tecnico-azure-ai" target="_blank" rel="noopener">repositório ↗</a>
+        </div>
+      </article>
+
+      <article class="entry" data-entry>
+        <div class="entry-num"><span class="n">009</span><span class="check" aria-hidden="true">✓</span></div>
         <div class="entry-body">
           <h3>Desafios de CSS — Trail Challenge &amp; Scroll Animations</h3>
           <p>
@@ -202,6 +262,43 @@
         </div>
         <div class="entry-links">
           <a href="https://github.com/rafa-crypt0?tab=repositories&q=css" target="_blank" rel="noopener">repositório ↗</a>
+        </div>
+      </article>
+
+      <article class="entry" data-entry>
+        <div class="entry-num"><span class="n">010</span><span class="check" aria-hidden="true">✓</span></div>
+        <div class="entry-body">
+          <h3>IPTV Lab <span class="status-tag">provisionado</span></h3>
+          <p>
+            Laboratório educacional de streaming com FFmpeg, Nginx RTMP e Docker, planejado para
+            estudar protocolos de transmissão e os pontos de segurança envolvidos nesse tipo de
+            infraestrutura. Ainda não lançado — está na fila de construção.
+          </p>
+          <div class="tags">
+            <span>Docker</span><span>FFmpeg</span><span>Nginx</span><span>Streaming</span>
+          </div>
+        </div>
+        <div class="entry-links">
+          <span class="pending-note">ainda não lançado</span>
+        </div>
+      </article>
+
+      <article class="entry" data-entry>
+        <div class="entry-num"><span class="n">011</span><span class="check" aria-hidden="true">✓</span></div>
+        <div class="entry-body">
+          <h3>Segurança Ofensiva — Uso Didático <span class="status-tag">sigiloso</span></h3>
+          <p>
+            Simulações de ransomware e keylogger em Python, feitas em repositórios de bootcamp, com
+            README explicando o funcionamento e referência à Lei nº 12.737/2012. Uso estritamente
+            educacional, para entender como esses ataques funcionam por dentro. Repositório mantido
+            privado por natureza do conteúdo.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>Segurança</span><span>Lei 12.737/2012</span>
+          </div>
+        </div>
+        <div class="entry-links">
+          <span class="pending-note">lançamento sigiloso — repositório privado</span>
         </div>
       </article>
 
@@ -259,13 +356,13 @@
       <h2>Assinatura</h2>
     </div>
     <p class="lede">
-      Aberto a vagas administrativas, de suporte técnico ou desenvolvimento júnior. Se o seu balanço
+      Aberto a vagas de suporte técnico ou desenvolvimento júnior. Se o seu balanço
       tem uma vaga em aberto, este é o contato.
     </p>
     <div class="contact-row">
       <a href="https://github.com/rafa-crypt0" target="_blank" rel="noopener">GitHub ↗</a>
-      <a href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a>
-      <a href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="mailto:rafael.andrade.agro@gmail.com">E-mail</a>
+      <a href="https://www.linkedin.com/in/rafael-andrade-paiva/" target="_blank" rel="noopener">LinkedIn ↗</a>
     </div>
     <p class="closing">
       Documento gerado e assinado digitalmente — Cariri, Ceará, Brasil.
