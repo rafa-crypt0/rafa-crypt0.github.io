@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rafael — Balancete Pessoal</title>
+<meta name="description" content="Portfólio de Rafael — contabilidade e tecnologia. Estágio em contabilidade, estudos em desenvolvimento, redes e segurança da informação.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="margin-rule" aria-hidden="true"></div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-left">
+      <span class="doc-label">Documento nº 001</span>
+      <h1 class="title">Rafael <span class="handle">@rafa-crypt0</span></h1>
+      <p class="subtitle">Contador em formação · Desenvolvedor em construção</p>
+    </div>
+    <div class="stamp" id="stamp">
+      <div class="stamp-ring">
+        <span>EM ANDAMENTO</span>
+      </div>
+    </div>
+  </div>
+  <nav class="masthead-nav">
+    <a href="#sobre">Sobre</a>
+    <a href="#balanco">Balanço</a>
+    <a href="#lancamentos">Projetos</a>
+    <a href="#competencias">Competências</a>
+    <a href="#assinatura">Contato</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="sobre" class="ledger-block">
+    <div class="block-head">
+      <span class="line-no">01</span>
+      <h2>Memorando</h2>
+    </div>
+    <p class="lede">
+      Enquanto lança notas fiscais durante o dia, escreve linhas de código à noite. Rafael cursa
+      <strong>Ciências Contábeis</strong> e <strong>Ciência da Computação</strong> em paralelo, e faz um
+      estágio de 30h semanais na Andrade Contabilidade, em Aiuaba (CE), sob supervisão de um contador
+      licenciado. O plano é pragmático: entrar no mercado por TI ou administrativo primeiro, e usar isso
+      como ponte até a especialização em segurança da informação e hacking ético.
+    </p>
+    <p class="lede">
+      Baseado no Cariri cearense. Aprende testando — cada projeto abaixo foi escrito, quebrado e
+      consertado por ele mesmo.
+    </p>
+  </section>
+
+  <section id="balanco" class="ledger-block balance-sheet">
+    <div class="block-head">
+      <span class="line-no">02</span>
+      <h2>Balancete</h2>
+    </div>
+    <p class="section-note">Como em qualquer balanço, um lado sustenta o outro.</p>
+
+    <div class="balance-grid">
+      <div class="balance-col debe">
+        <h3>Debe <span class="col-sub">— em construção</span></h3>
+        <ul>
+          <li>Uma vaga de agente administrativo ou TI para entrar no mercado</li>
+          <li>Aprofundar segurança da informação e hacking ético</li>
+          <li>Evoluir de front-end para full-stack (React, Node.js, SQL)</li>
+          <li>Inglês de leitura técnica para produção (escrita ainda é o elo mais fraco)</li>
+        </ul>
+      </div>
+      <div class="balance-col haver">
+        <h3>Haver <span class="col-sub">— já consolidado</span></h3>
+        <ul>
+          <li>Estágio ativo de 30h/semana em contabilidade real</li>
+          <li>Projetos práticos publicados em Python, HTML/CSS e C#</li>
+          <li>Estudo simultâneo em 5 plataformas (Cisco, CIEE+Google, DIO, Meta, Oracle)</li>
+          <li>Base em legislação contábil (Lei 6.404/76) e em direito digital (Lei 12.737/2012)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="balance-total">
+      <span>Saldo</span>
+      <span class="total-line" id="balanceTotal">contas a fechar — em progresso</span>
+    </div>
+  </section>
+
+  <section id="lancamentos" class="ledger-block">
+    <div class="block-head">
+      <span class="line-no">03</span>
+      <h2>Lançamentos <span class="col-sub">— projetos</span></h2>
+    </div>
+    <p class="section-note">
+      <span id="postedCount">0</span>/<span id="totalCount">0</span> lançamentos conferidos ao rolar a página.
+    </p>
+
+    <div class="ledger-table" id="ledgerTable">
+
+      <article class="entry" data-entry>
+        <div class="entry-num"><span class="n">001</span><span class="check" aria-hidden="true">✓</span></div>
+        <div class="entry-body">
+          <h3>Nomad — Chatbot de Educação Financeira</h3>
+          <p>
+            Assistente conversacional em Streamlit com RAG via sentence-transformers e modelos locais
+            rodando no Ollama. Projeto de encerramento do bootcamp DIO/Afya, documentado do zero ao deploy.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>Streamlit</span><span>RAG</span><span>Ollama</span>
+          </div>
+        </div>
+        <div class="entry-links">
+          <a href="https://github.com/rafa-crypt0/dio-lab-bia-do-futuro" target="_blank" rel="noopener">repositório ↗</a>
+        </div>
+      </article>
+
+      <article class="entry" data-entry>
+        <div class="entry-num"><span class="n">002</span><span class="check" aria-hidden="true">✓</span></div>
+        <div class="entry-body">
+          <h3>Sistema de Gestão de Mercado</h3>
+          <p>
+            Banco de dados completo para mercearia, com caminho de migração SQLite → PostgreSQL.
+            Modelado para múltiplas filiais, com tabelas de estoque, vendas, pagamentos e caderneta
+            de fiado do cliente.
+          </p>
+          <div class="tags">
+            <span>SQL</span><span>SQLite</span><span>PostgreSQL</span><span>Modelagem de dados</span>
+          </div>
+        </div>
+        <div class="entry-links">
+          <a href="https://github.com/rafa-crypt0?tab=repositories" target="_blank" rel="noopener">repositório ↗</a>
+        </div>
+      </article>
+
+      <article class="entry" data-entry>
+        <div class="entry-num"><span class="n">003</span><span class="check" aria-hidden="true">✓</span></div>
+        <div class="entry-body">
+          <h3>Cardio Clínica do Coração</h3>
+          <p>
+            Site institucional fictício, multi-página, construído para dominar Flexbox: cabeçalho fixo
+            (sticky), CSS modular e tema escuro aplicados numa clínica de cardiologia imaginária.
+          </p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>Flexbox</span>
+          </div>
+        </div>
+        <div class="entry-links">
+          <a href="https://github.com/rafa-crypt0?tab=repositories&q=cardio" target="_blank" rel="noopener">repositório ↗</a>
+        </div>
+      </article>
+
+      <article class="entry" data-entry>
+        <div class="entry-num"><span class="n">004</span><span class="check" aria-hidden="true">✓</span></div>
+        <div class="entry-body">
+          <h3>IPTV Lab</h3>
+          <p>
+            Laboratório educacional de streaming com FFmpeg, Nginx RTMP e Docker, criado para estudar
+            protocolos de transmissão e os pontos de segurança envolvidos nesse tipo de infraestrutura.
+          </p>
+          <div class="tags">
+            <span>Docker</span><span>FFmpeg</span><span>Nginx</span><span>Streaming</span>
+          </div>
+        </div>
+        <div class="entry-links">
+          <a href="https://github.com/rafa-crypt0?tab=repositories&q=iptv" target="_blank" rel="noopener">repositório ↗</a>
+        </div>
+      </article>
+
+      <article class="entry" data-entry>
+        <div class="entry-num"><span class="n">005</span><span class="check" aria-hidden="true">✓</span></div>
+        <div class="entry-body">
+          <h3>Segurança Ofensiva — Uso Didático</h3>
+          <p>
+            Simulações de ransomware e keylogger em Python, feitas em repositórios de bootcamp, com
+            README explicando o funcionamento e referência à Lei nº 12.737/2012. Uso estritamente
+            educacional, para entender como esses ataques funcionam por dentro.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>Segurança</span><span>Lei 12.737/2012</span>
+          </div>
+        </div>
+        <div class="entry-links">
+          <a href="https://github.com/rafa-crypt0?tab=repositories" target="_blank" rel="noopener">repositório ↗</a>
+        </div>
+      </article>
+
+      <article class="entry" data-entry>
+        <div class="entry-num"><span class="n">006</span><span class="check" aria-hidden="true">✓</span></div>
+        <div class="entry-body">
+          <h3>Desafios de CSS — Trail Challenge &amp; Scroll Animations</h3>
+          <p>
+            Série de desafios práticos de CSS: o Trail Challenge 01 da DIO (layout a partir de um
+            protótipo Figma, publicado via GitHub Pages) e o codelab de animações controladas por
+            scroll do Google I/O.
+          </p>
+          <div class="tags">
+            <span>CSS</span><span>GitHub Pages</span><span>Animação</span>
+          </div>
+        </div>
+        <div class="entry-links">
+          <a href="https://github.com/rafa-crypt0?tab=repositories&q=css" target="_blank" rel="noopener">repositório ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="competencias" class="ledger-block">
+    <div class="block-head">
+      <span class="line-no">04</span>
+      <h2>Competências <span class="col-sub">— carimbadas</span></h2>
+    </div>
+
+    <div class="stamp-grid">
+      <div class="stamp-group">
+        <h4>Desenvolvimento</h4>
+        <div class="badges">
+          <span>Python</span><span>HTML/CSS</span><span>JavaScript</span><span>C#</span><span>SQL</span><span>Git &amp; GitHub</span>
+        </div>
+      </div>
+      <div class="stamp-group">
+        <h4>Infraestrutura &amp; Nuvem</h4>
+        <div class="badges">
+          <span>Oracle OCI</span><span>AWS (fundamentos)</span><span>Docker</span><span>Nginx</span>
+        </div>
+      </div>
+      <div class="stamp-group">
+        <h4>Segurança &amp; Redes</h4>
+        <div class="badges">
+          <span>Fundamentos de Cibersegurança</span><span>Redes (Cisco)</span><span>Lei 12.737/2012</span>
+        </div>
+      </div>
+      <div class="stamp-group">
+        <h4>Contabilidade</h4>
+        <div class="badges">
+          <span>Lei 6.404/76</span><span>Escrituração</span><span>DLPA</span><span>Estruturas S.A.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="formacao">
+      <h4>Formação contínua</h4>
+      <ul class="platform-list">
+        <li><span class="plat">Cisco NetAcad</span> — Python, redes, segurança</li>
+        <li><span class="plat">CIEE + Google</span> — suporte de TI, cibersegurança, marketing, design</li>
+        <li><span class="plat">DIO</span> — HTML, CSS, SQL, bootcamps práticos</li>
+        <li><span class="plat">Meta / Coursera</span> — desenvolvimento front-end</li>
+        <li><span class="plat">Oracle</span> — OCI Cloud Infrastructure</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="assinatura" class="ledger-block signature-block">
+    <div class="block-head">
+      <span class="line-no">05</span>
+      <h2>Assinatura</h2>
+    </div>
+    <p class="lede">
+      Aberto a vagas administrativas, de suporte técnico ou desenvolvimento júnior. Se o seu balanço
+      tem uma vaga em aberto, este é o contato.
+    </p>
+    <div class="contact-row">
+      <a href="https://github.com/rafa-crypt0" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+    <p class="closing">
+      Documento gerado e assinado digitalmente — Cariri, Ceará, Brasil.
+      <span id="today"></span>
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span>rafa-crypt0.github.io</span>
+  <span>fl. 01/01</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
